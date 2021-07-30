@@ -1,11 +1,13 @@
 // import './App.css';
+import React from 'react';
 import Header from './components/Header';
-import Home from './components/Home';
+
 import Watchlist from './components/Watchlist';
 import Details from './components/Details';
 import { GlobalProvider } from "./context/GlobalState";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import AllResults  from './components/AllResults';
+const HomeLazyComponent = React.lazy(() => import('./components/Home'));
 
 function App() {
   return (
@@ -14,7 +16,9 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/">
-            <Home />
+            <React.Suspense fallback={<div />}>
+              <HomeLazyComponent />
+            </React.Suspense>
           </Route>
           <Route path="/watchlist">
             <Watchlist />
