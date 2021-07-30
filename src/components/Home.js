@@ -11,26 +11,26 @@ import requests from "../api/requests";
 const Home = () => {
 	return (
 		<>
-			<div className="container mx-auto my-10 rounded-md overflow-visible">
+			<div className="container mx-auto my-10 rounded-md overflow-hidden bg-gray-800" style={{height:326}}>
 				<ImgSlider />
 			</div>
 
 			<div className="container mx-auto py-10">
-				<div className="flex space-x-8">
-					<div className="border-2 border-gray-400 rounded-md bg-transparent transition duration-500 transform hover:scale-110">
-						<img src={scale} alt="disney"/>
+				<div className="grid grid-cols-5 gap-8">
+					<div className="border-2 flex-shrink-0 h-32 border-gray-400 rounded-md bg-transparent transition duration-500 transform hover:scale-110">
+						<img src={scale} alt="disney" className="h-32" />
 					</div>
-					<div className="border-2 border-gray-400 rounded-md bg-transparent transition duration-500 transform hover:scale-110">
-						<img src={pixar} alt="disney"/>
+					<div className="border-2 flex-shrink-0 h-32 border-gray-400 rounded-md bg-transparent transition duration-500 transform hover:scale-110">
+						<img src={pixar} alt="disney" className="h-32"/>
 					</div>
-					<div className="border-2 border-gray-400 rounded-md bg-transparent transition duration-500 transform hover:scale-110">
-						<img src={marvel} alt="disney"/>
+					<div className="border-2 flex-shrink-0 h-32 border-gray-400 rounded-md bg-transparent transition duration-500 transform hover:scale-110">
+						<img src={marvel} alt="disney" className="h-32"/>
 					</div>
-					<div className="border-2 border-gray-400 rounded-md bg-transparent transition duration-500 transform hover:scale-110">
-						<img src={starwars} alt="disney"/>
+					<div className="border-2 flex-shrink-0 h-32 border-gray-400 rounded-md bg-transparent transition duration-500 transform hover:scale-110">
+						<img src={starwars} alt="disney" className="h-32"/>
 					</div>
-					<div className="border-2 border-gray-400 rounded-md bg-transparent transition duration-500 transform hover:scale-110">
-						<img src={natgeo} alt="disney"/>
+					<div className="border-2 flex-shrink-0 h-32 border-gray-400 rounded-md bg-transparent transition duration-500 transform hover:scale-110">
+						<img src={natgeo} alt="disney" className="h-32"/>
 					</div>
 				</div>
 

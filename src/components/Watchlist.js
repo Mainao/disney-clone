@@ -4,6 +4,7 @@ import Card from "./Card";
 
 const Watchlist = () => {
 	const { watchlist } = useContext(GlobalContext);
+	console.log(watchlist);
 
 	return (
 		<div className="px-12 py-10 text-white">

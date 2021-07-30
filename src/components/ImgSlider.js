@@ -18,17 +18,17 @@ const ImgSlider = () => {
   };
 	return (
 		<Slider {...settings}>
-			<div className="px-2">
-				<img src={badging} alt=""/>
+			<div>
+				<img src={badging} alt="" className="rounded-md" loading="lazy" />
 			</div>
-			<div className="px-2">
-				<img src={scaleone} alt=""/>
+			<div>
+				<img src={scaleone} alt="" className="rounded-md" loading="lazy" />
 			</div>
-			<div className="px-2">
-				<img src={badgingone} alt=""/>
+			<div>
+				<img src={badgingone} alt="" className="rounded-md" loading="lazy" />
 			</div>
-			<div className="px-2">
-				<img src={scaletwo} alt=""/>
+			<div>
+				<img src={scaletwo} alt="" className="rounded-md" loading="lazy" />
 			</div>
 		</Slider>
 	)

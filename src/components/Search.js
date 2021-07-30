@@ -44,7 +44,7 @@ const Search = () => {
 	return (
 		<div className="relative">
 			<input 
-				className="w-64 px-2 h-8 text-white text-sm border-b ring-0 focus:ring-0 bg-transparent transition-all mr-0 focus:outline-none focus:border-blue-500 focus:w-96 duration-300" 
+				className="w-64 h-8 text-white text-sm border-b ring-0 focus:ring-0 bg-transparent transition-all mr-0 focus:outline-none focus:border-blue-500 focus:w-96 duration-300" 
 				type="search" 
 				placeholder="Search..."
 				value={searchQuery}

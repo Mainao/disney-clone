@@ -4,6 +4,17 @@ import toast, { Toaster } from 'react-hot-toast';
 
 const DetailCard = ({movie}) => {
 	const notify = (message) => toast(message, {duration: 1000});
+	const formattedDate = (dateInput) => {
+		const months = ["Jan", "Feb", "Mar","Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+		let date = new Date(dateInput);	
+		return `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;
+	}
+
+	const formatDuration = (num) => {
+		var hours = Math.floor(num / 60);  
+		var minutes = num % 60;
+		return `${hours} hr ${minutes} min`;         
+	}
 
 	const {
     addToWatchList,
@@ -39,13 +50,17 @@ const DetailCard = ({movie}) => {
 			<div className="relative px-12 py-10 w-full flex flex-col justify-between text-gray-300 relative z-50 bg-gray-800 ">
 				<div className="flex flex-col gap-y-3">
 					<p className="text-2xl">{movie.title}</p>
-					<p>
-						{movie.runtime} 
-						{movie.release_date.slice(0,4)}
-						{movie.genres.map(item => (
-							<span key={item.id}>{item.name}</span>
+					<div className="flex space-x-2 items-center">
+						<p>{formatDuration(movie.runtime)}</p>
+						<div className="bg-white rounded-full h-1 w-1"></div>
+						<p>{formattedDate(movie.release_date)}</p>
+						{movie.genres.map((item) => (
+							<div key={item.id} className="flex items-center space-x-2">
+								<div className="bg-white rounded-full h-1 w-1"></div>
+								<p>{item.name}</p>
+							</div>
 						))}
-					</p>
+					</div>
 					<p>
 						{movie.overview}
 					</p>
