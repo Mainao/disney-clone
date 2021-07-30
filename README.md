@@ -15,7 +15,7 @@
 
 ![image](https://user-images.githubusercontent.com/24612087/127680083-bfc57ed5-a470-45de-a79d-c6cca11a2e09.png)
 
-A simple ReactJS Disney+ Hotstar clone.
+A Disney+ Hotstar clone build using React. It fetches the data from TMDB (The Movie Database) API. 
 
 - Demo - [Click here](https://disney-cloneapp.netlify.app/)
 
@@ -30,7 +30,10 @@ A simple ReactJS Disney+ Hotstar clone.
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/TtUjDt19eIHxNQ4n5jps) was to build an application to complete the given user stories.
+- Home Page with movie lists
+- Search movies by name
+- View movie details
+- Add to watchlist
 
 ## How To Use
 
