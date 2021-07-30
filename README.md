@@ -15,8 +15,7 @@
 
 ## Overview
 
-![screenshot](![image](https://user-images.githubusercontent.com/24612087/127679782-40da6e15-f89f-4ba3-9d96-85a058b44ce2.png)
-)
+![screenshot](![image](https://user-images.githubusercontent.com/24612087/127679782-40da6e15-f89f-4ba3-9d96-85a058b44ce2.png))
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
