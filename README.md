@@ -15,6 +15,8 @@
 
 ![image](https://user-images.githubusercontent.com/24612087/127680083-bfc57ed5-a470-45de-a79d-c6cca11a2e09.png)
 
+A simple ReactJS Disney+ Hotstar clone.
+
 - Demo - [Click here](https://disney-cloneapp.netlify.app/)
 
 ### Built With
